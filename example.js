@@ -13,11 +13,11 @@ exec('node --version', (err) => {
 
 // execute multiple commands in series
 series([
-  'node process/http',
-  'node process/a',
+  'node http',
+  'node a',
   // 'node process/error',
-  'node process/b',
-  'node process/c',
+  'node b',
+  'node c',
   'node --version',
 ], (err) => {
   if (err) {
